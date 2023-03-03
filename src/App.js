@@ -1,5 +1,5 @@
 import './App.css';
-import './features/NavigationMenu.css';
+import './features/navigation/NavigationMenu.css';
 import Menu from './features/Menu';
 
 const App = () => (

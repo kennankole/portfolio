@@ -66,53 +66,22 @@ nav {
   transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
 }
 
+.nav-container.mobile {
+  display: none;
+}
+.hamburger-menu {
+  display: none;
+}
 
 @media (max-width: 767px) {
-  .nav-ul {
+  .nav-container.desktop {
     display: none;
   }
-  .hamburger {
-    width: 2rem;
-    height: 2rem;
+  .nav-container.mobile {
     display: flex;
-    justify-content: space-around;
-    flex-flow: column nowrap;
-    /* z-index: 10; */
   }
-  
-  .burger {
-    width: 2rem;
-    height: 0.25rem;
-    border-radius: 10px;
-    background-color: black;
-    transform-origin: 1px;
-    transition: all 0.3s linear;
-  }
-  .overlay {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
-  }
-
-  .overlay {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
-    border: 2px solid black;
-    overflow-x: hidden;
-    transition: 0.5s;
-  }
-
-  .nav-elements {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
+  .hamburger-menu {
+    display: flex;
+    cursor: pointer;
   }
 }

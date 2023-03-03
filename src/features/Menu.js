@@ -3,13 +3,16 @@ import { Route, BrowserRouter, Routes } from 'react-router-dom';
 import About from './about/About';
 import Projects from './projects/Projects';
 import TechStack from './techstacks/TechStack';
-import NavigationMenu from './navigation/Navigation';
+import DesktopNavigation from './navigation/Navigation';
+import MobileMenu from './navigation/MobileNavigation';
+
 import Home from './Home';
 
 const Menu = () => (
   <BrowserRouter>
     <div>
-      <NavigationMenu />
+      <DesktopNavigation />
+      <MobileMenu />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
