@@ -1,0 +1,32 @@
+.about-para {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #666;
+}
+
+.work-titles {
+  border-bottom: 2px solid rgb(187, 185, 185);
+}
+
+.about-education,
+.title,
+.about-work {
+  font-size: 38px;
+}
+
+p {
+  color: #999;
+}
+
+h1 {
+  color: #070317;
+}
+
+span {
+  background: #9f9;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #008000;
+  font-weight: 700;
+}
