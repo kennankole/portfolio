@@ -4,12 +4,13 @@ import { useState } from 'react';
 import NavLinks from './NavLinks';
 
 const MobileMenu = () => {
+  const isMobile = false;
   const [hamburger, setHamburger] = useState(false);
   const openMenu = (
     <CgMenu
       size="40px"
       className="hamburger-menu"
-      color="white"
+      color="black"
       onClick={() => setHamburger(!hamburger)}
     />
   );
@@ -18,16 +19,18 @@ const MobileMenu = () => {
     <CgClose
       size="40px"
       className="hamburger-menu"
-      color="white"
+      color="black"
       onClick={() => setHamburger(!hamburger)}
     />
   );
-
+  const closeMobileMenu = () => setHamburger(false);
   return (
-    <div className="nav-container mobile">
-      <nav className="flex">
+    <div className="mobile-menus">
+      <nav>
         { hamburger ? closeMenu : openMenu }
-        { hamburger && <NavLinks />}
+        <ul>
+          { hamburger && <NavLinks isMobile={isMobile} closeMobileMenu={closeMobileMenu} />}
+        </ul>
       </nav>
     </div>
   );

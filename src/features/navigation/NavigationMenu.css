@@ -66,22 +66,49 @@ nav {
   transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
 }
 
-.nav-container.mobile {
+.mobile-menus {
   display: none;
 }
-.hamburger-menu {
-  display: none;
-}
+
 
 @media (max-width: 767px) {
   .nav-container.desktop {
     display: none;
   }
   .nav-container.mobile {
-    display: flex;
+    display: block;
   }
   .hamburger-menu {
-    display: flex;
     cursor: pointer;
+    z-index: 3;
+    position: absolute;
+    margin: 3%;
+    right: 5%;
+  }
+
+  .mobile-menus {
+    display: flex;
+  }
+  nav {
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    align-items: center;
+    overflow-x: hidden;
+  }
+
+  .link-items {
+    padding: 3%;
+    color: whitesmoke;
+    font-size: 28px;
   }
 }

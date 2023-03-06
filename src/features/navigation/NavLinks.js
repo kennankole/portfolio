@@ -1,57 +1,65 @@
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import PropTypes from 'prop-types';
 
-const NavLinks = () => (
-  <ul className="flex flex-row space-x-10 ">
-    <li>
-      <Link to="/" exact activeClassName="active">
-        Home
-      </Link>
-    </li>
-    <li>
-      <Link to="/about" activeClassName="active">
-        About
-      </Link>
-    </li>
-    <li>
-      <Link to="/projects" activeClassName="active">
-        Projects
-      </Link>
-    </li>
-    <li>
-      <Link to="/techstack" activeClassName="active">
-        TechStack
-      </Link>
-    </li>
-    <li>
+const NavLinks = ({ props }) => (
+  <>
+    <Link to="/" exact activeClassName="active" className="link-items" onClick={() => props.isMobile && props.closeMobileMenu()}>
+      Home
+    </Link>
+
+    <Link to="/about" className="link-items" activeClassName="active" onClick={() => props.isMobile && props.closeMobileMenu()}>
+      About
+    </Link>
+
+    <Link to="/projects" className="link-items" activeClassName="active" onClick={() => props.isMobile && props.closeMobileMenu()}>
+      Projects
+    </Link>
+
+    <Link to="/techstack" className="link-items" activeClassName="active" onClick={() => props.isMobile && props.closeMobileMenu()}>
+      TechStack
+    </Link>
+    <li className="link-items">
       <a
         href="https://www.linkedin.com/in/kennedyomondi"
         target="_blank"
         rel="noopener noreferrer"
+        onClick={() => props.isMobile && props.closeMobileMenu()}
       >
-        <FontAwesomeIcon icon={faLinkedin} />
+        <FontAwesomeIcon
+          icon={faLinkedin}
+        />
       </a>
     </li>
-
-    <li>
+    <li className="link-items">
       <a
         href="https://github.com/kennankole"
         target="_blank"
         rel="noopener noreferrer"
+        onClick={() => props.isMobile && props.closeMobileMenu()}
       >
         <FontAwesomeIcon icon={faGithub} />
       </a>
     </li>
-    <li>
+    <li className="link-items">
       <a
         href="https://twitter.com/KennedyObwombe"
         target="_blank"
         rel="noopener noreferrer"
+        onClick={() => props.isMobile && props.closeMobileMenu()}
       >
         <FontAwesomeIcon icon={faTwitter} />
       </a>
     </li>
-  </ul>
+  </>
 );
+
+NavLinks.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
+  props: PropTypes.object.isRequired,
+  isMobile: PropTypes.bool.isRequired,
+  closeMobileMenu: PropTypes.func.isRequired,
+};
 export default NavLinks;
