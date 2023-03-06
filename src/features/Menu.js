@@ -1,16 +1,18 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import { Route, BrowserRouter, Routes } from 'react-router-dom';
-import About from './About';
-import Projects from './Projects';
-import TechStack from './TechStack';
-import NavigationMenu from './Navigation';
+
+import About from './about/About';
+import Projects from './projects/Projects';
+import TechStack from './techstacks/TechStack';
+import DesktopNavigation from './navigation/Navigation';
+import MobileMenu from './navigation/MobileNavigation';
+
 import Home from './Home';
 
 const Menu = () => (
   <BrowserRouter>
     <div>
-      <h1>Hello</h1>
-      <NavigationMenu />
+      <DesktopNavigation />
+      <MobileMenu />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
