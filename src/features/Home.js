@@ -1,21 +1,24 @@
-import logo from '../cs-education.jpg';
+import profile from '../images/profile-pic.png';
 
 const Home = () => (
   <main>
-    <div className="main-window">
-      <h3>Hello and welcome to my page</h3>
-      <div className="home-container">
-        <div className="home-text">
-          <p>
-            Hi 👋,
-            My name is
-            Pavan MG
-            I build things for web
-          </p>
-        </div>
-        <div className="home-avatar">
-          <img src={logo} alt="profile-pic" height={150} width={150} />
-        </div>
+    <div className="flex justify-evenly m-8 main-page">
+      <div className="flex items-center py-10">
+        <p className="home-para">
+          Hi 👋,
+          {' '}
+          <br />
+          My name is
+          {' '}
+          <br />
+          Omondi Kennedy
+          {' '}
+          <br />
+          I build things for web
+        </p>
+      </div>
+      <div className="flex items-center">
+        <img src={profile} alt="profile-pic" className="image flex items-center" />
       </div>
     </div>
   </main>
