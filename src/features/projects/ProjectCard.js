@@ -1,5 +1,4 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { BsGithub } from 'react-icons/bs';
 import { FaLink } from 'react-icons/fa';
 import cardData from '../../app/cardData';
 
@@ -16,16 +15,18 @@ const ProjectCard = () => (
             <p className="p-3">{card.description}</p>
             <p className="p-3">
               Tech Stack:
-              {' '}
               {card.language}
             </p>
-            <p className="p-3">
-              Live Preview
-              <FaLink />
-              {' '}
-              View Code
-              <FontAwesomeIcon icon={faGithub} />
-            </p>
+            <div className="flex justify-around w-full">
+              <div className=" flex text">
+                <div className="flex items-center"><FaLink /></div>
+                <div className="flex items-center"><p className="p-3">Live Preview</p></div>
+              </div>
+              <div className="flex">
+                <div className="flex items-center"><BsGithub /></div>
+                <div className="flex items-center"><p className="p-3">View Code</p></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
