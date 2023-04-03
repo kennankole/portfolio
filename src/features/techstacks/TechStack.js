@@ -19,10 +19,8 @@ import './TechStack.css';
 
 const TechStack = () => (
   <div className="flex flex-col justify-center stack-container">
-    <div className="flex flex-col">
-      <div className="flex justify-center">My Tech Stack</div>
-      <div className="flex justify-center">Technologies I have been using</div>
-    </div>
+    <h1 className="text-3xl text-center font-bold">My Tech Stack</h1>
+    <p className="max-[600px]:text-lg text-xl text-center p-2">Technologies I have been working with recently </p>
     <div className="flex justify-around items-center flex-wrap p-10 fron-end-stack">
       <img className="max-[600px]:max-w-[35%] max-w-[9%] m-6" src={html} alt="html" />
       <img className="max-[600px]:max-w-[26%] max-w-[6.5%] m-6" src={css} alt="react" />
