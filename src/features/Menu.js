@@ -1,4 +1,4 @@
-import { Route, BrowserRouter, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 import About from './about/About';
 import Projects from './projects/Projects';
@@ -9,7 +9,7 @@ import MobileMenu from './navigation/MobileNavigation';
 import Home from './Home';
 
 const Menu = () => (
-  <BrowserRouter>
+  <section>
     <div>
       <DesktopNavigation />
       <MobileMenu />
@@ -20,6 +20,6 @@ const Menu = () => (
         <Route path="/techstack" element={<TechStack />} />
       </Routes>
     </div>
-  </BrowserRouter>
+  </section>
 );
 export default Menu;

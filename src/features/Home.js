@@ -1,4 +1,7 @@
 import profile from '../images/profile-pic.png';
+import TechStack from './techstacks/TechStack';
+import Projects from './projects/Projects';
+import About from './about/About';
 
 const Home = () => (
   <main>
@@ -21,6 +24,9 @@ const Home = () => (
         <img src={profile} alt="profile-pic" className="max-[600px]:max-w-[70%] min-[600px]:max-w-[100%]" />
       </div>
     </div>
+    <TechStack />
+    <Projects />
+    <About />
   </main>
 );
 

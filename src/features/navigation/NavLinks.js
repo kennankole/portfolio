@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 // eslint-disable-next-line import/no-extraneous-dependencies
@@ -6,21 +6,21 @@ import PropTypes from 'prop-types';
 
 const NavLinks = ({ props }) => (
   <>
-    <Link to="/" exact activeClassName="active" className="link-items" onClick={() => props.isMobile && props.closeMobileMenu()}>
+    <NavLink to="/" exact activeClassName="active" className="link-items" onClick={() => props.isMobile && props.closeMobileMenu()}>
       Home
-    </Link>
+    </NavLink>
 
-    <Link to="/about" className="link-items" activeClassName="active" onClick={() => props.isMobile && props.closeMobileMenu()}>
+    <NavLink to="/about" className="link-items" activeClassName="active" onClick={() => props.isMobile && props.closeMobileMenu()}>
       About
-    </Link>
+    </NavLink>
 
-    <Link to="/projects" className="link-items" activeClassName="active" onClick={() => props.isMobile && props.closeMobileMenu()}>
+    <NavLink to="/projects" className="link-items" activeClassName="active" onClick={() => props.isMobile && props.closeMobileMenu()}>
       Projects
-    </Link>
+    </NavLink>
 
-    <Link to="/techstack" className="link-items" activeClassName="active" onClick={() => props.isMobile && props.closeMobileMenu()}>
+    <NavLink to="/techstack" className="link-items" activeClassName="active" onClick={() => props.isMobile && props.closeMobileMenu()}>
       TechStack
-    </Link>
+    </NavLink>
     <li className="link-items">
       <a
         href="https://www.linkedin.com/in/kennedyomondi"
