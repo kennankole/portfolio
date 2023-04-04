@@ -1,16 +1,18 @@
-/* eslint-disable import/no-extraneous-dependencies */
-import PropTypes from 'prop-types';
+import { useRouteError } from 'react-router-dom';
 
-const Languages = ({ lang }) => (
-  <div>
-    <ul>
-      <li>{ lang }</li>
-    </ul>
-  </div>
-);
+const ErrorPage = () => {
+  const error = useRouteError();
+  // eslint-disable-next-line no-console
+  console.error(error);
 
-Languages.propTypes = {
-  lang: PropTypes.string.isRequired,
+  return (
+    <div id="error-page">
+      <h1>Oops!</h1>
+      <p>Sorry, an unexpected error has occured.</p>
+      <p>
+        <i>{ error.statusText || error.message }</i>
+      </p>
+    </div>
+  );
 };
-
-export default Languages;
+export default ErrorPage;
