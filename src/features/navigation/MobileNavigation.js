@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { CgMenu, CgClose } from 'react-icons/cg';
 import { useState } from 'react';
-import NavLinks from './NavLinks';
+import MobileNavLinks from './MobileNavLinks';
 
 const MobileMenu = () => {
   const isMobile = false;
@@ -29,7 +29,7 @@ const MobileMenu = () => {
       <nav>
         { hamburger ? closeMenu : openMenu }
         <ul>
-          { hamburger && <NavLinks isMobile={isMobile} closeMobileMenu={closeMobileMenu} />}
+          { hamburger && <MobileNavLinks isMobile={isMobile} closeMobileMenu={closeMobileMenu} />}
         </ul>
       </nav>
     </div>

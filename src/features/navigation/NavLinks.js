@@ -2,32 +2,47 @@ import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 // eslint-disable-next-line import/no-extraneous-dependencies
-import PropTypes from 'prop-types';
 
-const NavLinks = ({ props }) => (
+const NavLinks = () => (
   <div>
     <div>
-      <NavLink to="/" exact activeClassName="active" className="link-items" onClick={() => props.isMobile && props.closeMobileMenu()}>
+      <NavLink
+        to="/"
+        exact
+        activeClassName="active"
+        className="link-items"
+      >
         Home
       </NavLink>
 
-      <NavLink to="/about" className="link-items" activeClassName="active" onClick={() => props.isMobile && props.closeMobileMenu()}>
+      <NavLink
+        to="/about"
+        className="link-items"
+        activeClassName="active"
+      >
         About
       </NavLink>
 
-      <NavLink to="/projects" className="link-items" activeClassName="active" onClick={() => props.isMobile && props.closeMobileMenu()}>
+      <NavLink
+        to="/projects"
+        className="link-items"
+        activeClassName="active"
+      >
         Projects
       </NavLink>
 
-      <NavLink to="/techstack" className="link-items" activeClassName="active" onClick={() => props.isMobile && props.closeMobileMenu()}>
+      <NavLink
+        to="/techstack"
+        className="link-items"
+        activeClassName="active"
+      >
         TechStack
       </NavLink>
       <NavLink
         className="link-items"
-        href="https://www.linkedin.com/in/kennedyomondi"
+        to="https://www.linkedin.com/in/kennedyomondi"
         target="_blank"
         rel="noopener noreferrer"
-        onClick={() => props.isMobile && props.closeMobileMenu()}
       >
         <FontAwesomeIcon
           icon={faLinkedin}
@@ -35,31 +50,22 @@ const NavLinks = ({ props }) => (
       </NavLink>
       <NavLink
         className="link-items"
-        href="https://github.com/kennankole"
+        to="https://github.com/kennankole"
         target="_blank"
         rel="noopener noreferrer"
-        onClick={() => props.isMobile && props.closeMobileMenu()}
       >
         <FontAwesomeIcon icon={faGithub} />
       </NavLink>
 
       <NavLink
         className="link-items"
-        href="https://twitter.com/KennedyObwombe"
+        to="https://twitter.com/KennedyObwombe"
         target="_blank"
         rel="noopener noreferrer"
-        onClick={() => props.isMobile && props.closeMobileMenu()}
       >
         <FontAwesomeIcon icon={faTwitter} />
       </NavLink>
     </div>
   </div>
 );
-
-NavLinks.propTypes = {
-  // eslint-disable-next-line react/forbid-prop-types
-  props: PropTypes.object.isRequired,
-  isMobile: PropTypes.bool.isRequired,
-  closeMobileMenu: PropTypes.func.isRequired,
-};
 export default NavLinks;
