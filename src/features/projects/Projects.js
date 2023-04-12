@@ -1,12 +1,14 @@
 import ProjectCard from './ProjectCard';
 
 const Projects = () => (
-  <div>
-    <h1>Projects</h1>
-    <div className="project-container">
-      <h2>Things I have built so far</h2>
-      <ProjectCard />
+  <div className="">
+    <div className="flex justify-center">
+      <div className="flex flex-col">
+        <h2 className="flex justify-center text-3xl">Projects</h2>
+        <h1 className="flex justify-center text-2xl">Things I have built so far</h1>
+      </div>
     </div>
+    <ProjectCard />
   </div>
 );
 export default Projects;

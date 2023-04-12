@@ -45,15 +45,3 @@
     transform: translateY(0);
   }
 }
-
-.main-page {
-  background-color: #ffff;
-}
-
-.home-para {
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 700;
-  letter-spacing: -1px;
-  color: #42446e;
-}
