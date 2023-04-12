@@ -1,39 +1,31 @@
-// import logo from '../images/logo.svg';
-// import css3 from '../images/css3.svg';
-// import js from '../images/js.svg';
-// import html from '../images/html.svg';
-import sky from '../images/sky.jpeg';
+import veganMeals from './images/veganMeals.png';
+import spaceX from './images/spaceX.png';
+import royalMeals from './images/royalMeals.png';
 
 const cardData = {
   card1: {
-    image: sky,
-    title: 'Capstone1',
-    description: 'Early in my banking career I got a new boss. He was in over his head. I could see it. So I told him to send me the hard stuff. Then I did the work for him and said put your name on the bottom',
-    language: 'React-Redux',
+    image: veganMeals,
+    title: 'Vegan meals',
+    description: 'This project uses meals API to create a  vegan meal  website that allows users to query vegan meals and  get their tips on how to cook it.',
+    language: 'HTML, JavaScript, Webpack, CSS3, React',
+    liveLink: 'https://vegan-meals.onrender.com/',
+    github: 'https://github.com/kennankole/vegan-meals',
   },
   card2: {
-    image: sky,
-    title: 'Capstone2',
-    description: 'This is sample project description random things',
-    language: 'CSS3',
+    image: spaceX,
+    title: 'Space-X',
+    description: 'This web application offers space travel services for both commercial and scientific purposes. It allows users to reserve rockets and participate in specific space missions',
+    language: 'HTML, JavaScript, Webpack, CSS3, React',
+    liveLink: 'https://space-traval-x.netlify.app/',
+    github: 'https://github.com/Mujeeb4582/Space-X',
   },
   card3: {
-    image: sky,
-    title: 'Capstone3',
-    description: 'This is sample project description random things',
-    language: 'React-Redux',
-  },
-  card4: {
-    image: sky,
-    title: 'Capstone4',
-    description: 'This is sample project description random things',
-    language: 'JavaScript',
-  },
-  card5: {
-    image: sky,
-    title: 'Capstone1',
-    description: 'This is sample project description random things',
-    language: 'React-Redux',
+    image: royalMeals,
+    title: 'Royal Meals',
+    description: ' This is a food website that gives  user different layers of interaction such as liking a meal,  commenting and reading about a meal.',
+    language: 'HTML,JavaScript,CSS',
+    liveLink: 'https://ridwanullahi-code.github.io/royal-meals-website/',
+    github: 'https://github.com/Ridwanullahi-code/royal-meals-website',
   },
 };
 export default cardData;

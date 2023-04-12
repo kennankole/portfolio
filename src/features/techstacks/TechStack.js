@@ -15,10 +15,9 @@ import python from '../../images/python.jpg';
 import rails from '../../images/rails.png';
 import gitlab from '../../images/gitlab.png';
 import postgresql from '../../images/postgresql.png';
-import './TechStack.css';
 
 const TechStack = () => (
-  <div className="flex flex-col justify-center stack-container">
+  <div className="flex flex-col justify-center p-5 stack-container">
     <h1 className="text-3xl text-center font-bold">My Tech Stack</h1>
     <p className="max-[600px]:text-lg text-xl text-center p-2">Technologies I have been working with recently </p>
     <div className="flex justify-around items-center flex-wrap p-10 fron-end-stack">
