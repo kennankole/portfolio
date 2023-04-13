@@ -8,23 +8,32 @@ const About = () => (
       <div className=" flex flex-col about-me-text">
         <h1 className="font-bold py-5 title">About Me</h1>
         <p className="font-semibold about-para ">
-          Hello, and welcome to my website! My name is Kennedy,
-          and I am a junior full-stack developer with a passion for GIS.
+          Hello, and welcome to my website! My name is Kennedy
+          {' '}
+          <br />
+          <br />
+          {/* and I am a junior full-stack developer with a passion for GIS.
           I have always been interested in the intersection of technology and geography,
           and that is what led me to pursue a degree in GIS. After graduation,
           I realized that I wanted to combine my GIS skills with web development
-          to create powerful, interactive mapping applications.
+          to create powerful, interactive mapping applications. */}
           As a full-stack developer, I have experience with both front-end
           and back-end development. I enjoy working with JavaScript, Python,
           Ruby, HTML, CSS, and a variety of libraries and frameworks such as React-Redux, Flask,
           Ruby on Rails, and Django. I also have experience with SQL databases,
           as well as Docker.
-          What sets me apart from other developers is my ability to think spatially.
+          {' '}
+          <br />
+          <br />
+          {/* What sets me apart from other developers is my ability to think spatially.
           I can work with geospatial data, create custom maps,
-          and develop location-based applications.
+          and develop location-based applications. */}
           I am excited to bring this unique perspective to any project I work on.
           If you are looking for a junior developer with a strong background in GIS,
           please do not hesitate to reach out.
+          {' '}
+          <br />
+          <br />
           I am always eager to learn new things and take on new challenges.
           Thank you for visiting my website, and I look forward to hearing from you!
         </p>

@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 // eslint-disable-next-line import/no-extraneous-dependencies
@@ -16,17 +16,17 @@ const MobileNavLinks = ({ props }) => (
       Home
     </NavLink>
 
-    <NavLink
-      to="/about"
+    <Link
+      to="about"
       className="link-items"
       activeClassName="active"
       onClick={() => props.isMobile && props.closeMobileMenu()}
     >
       About
-    </NavLink>
+    </Link>
 
     <NavLink
-      to="/projects"
+      to="projects"
       className="link-items"
       activeClassName="active"
       onClick={() => props.isMobile && props.closeMobileMenu()}
@@ -35,7 +35,7 @@ const MobileNavLinks = ({ props }) => (
     </NavLink>
 
     <NavLink
-      to="/techstack"
+      to="techstack"
       className="link-items"
       activeClassName="active"
       onClick={() => props.isMobile && props.closeMobileMenu()}
