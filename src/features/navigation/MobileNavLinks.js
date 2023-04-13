@@ -17,7 +17,7 @@ const MobileNavLinks = ({ props }) => (
     </NavLink>
 
     <Link
-      to="/about"
+      to="about"
       className="link-items"
       activeClassName="active"
       onClick={() => props.isMobile && props.closeMobileMenu()}
@@ -26,7 +26,7 @@ const MobileNavLinks = ({ props }) => (
     </Link>
 
     <NavLink
-      to="/projects"
+      to="projects"
       className="link-items"
       activeClassName="active"
       onClick={() => props.isMobile && props.closeMobileMenu()}
@@ -35,7 +35,7 @@ const MobileNavLinks = ({ props }) => (
     </NavLink>
 
     <NavLink
-      to="/techstack"
+      to="techstack"
       className="link-items"
       activeClassName="active"
       onClick={() => props.isMobile && props.closeMobileMenu()}
