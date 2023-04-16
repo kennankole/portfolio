@@ -11,7 +11,6 @@ import {
   Tooltip,
 } from '@material-tailwind/react';
 import PropTypes from 'prop-types';
-import './ProjectCard.css';
 import cardData from '../../app/cardData';
 
 const Cards = ({ data }) => (

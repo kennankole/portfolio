@@ -3,7 +3,7 @@ import { FaSchool } from 'react-icons/fa';
 import './About.css';
 
 const About = () => (
-  <section className="flex justify-start min-[600px]:p-10 m-8 w-5/6 about-me-section ">
+  <section className="flex justify-around min-[600px]:p-10 m-10 w-5/6 about-me-section ">
     <div className="min-[600px]:w-4/5 about-container">
       <div className=" flex flex-col about-me-text">
         <h1 className="font-bold py-5 title">About Me</h1>

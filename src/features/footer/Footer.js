@@ -94,9 +94,24 @@ const Footer = () => (
           TechStack
         </Typography>
       </div>
-      <div className="acknowlege">
-        <Typography>
-          Designed by Pravan and built by Kennedy
+      <div className="flex gap-x-2 flex-wrap acknowlege">
+        Designed by
+        <Typography
+          as="a"
+          href="https://www.figma.com/@pavanmg007"
+          color="blue-gray"
+          className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
+        >
+          Pravan
+        </Typography>
+        and built by
+        <Typography
+          as="a"
+          href="https://github.com/kennankole"
+          color="blue-gray"
+          className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
+        >
+          kennankole
         </Typography>
 
       </div>
