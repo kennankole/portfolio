@@ -11,12 +11,12 @@ import {
   Tooltip,
 } from '@material-tailwind/react';
 import PropTypes from 'prop-types';
+import './ProjectCard.css';
 import cardData from '../../app/cardData';
 
 const Cards = ({ data }) => (
-  <Card className="max-w-[24rem] overflow-hidden m-1">
+  <Card className="max-w-[24rem] overflow-hidden m-1 card-section">
     <CardHeader
-      floated={false}
       shadow={false}
       color="transparent"
       className="m-0 rounded-none"
@@ -24,6 +24,7 @@ const Cards = ({ data }) => (
       <img
         src={data.image}
         alt={data.title}
+        className="card-section"
       />
     </CardHeader>
     <br />
