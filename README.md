@@ -55,13 +55,13 @@ In order to run this project you need:
 
 ```sh
   cd my-folder
-  git clone https://github.com/kennankole/pomodoro-time.git
+  git clone https://github.com/kennankole/portfolio.git
 ```
 
 ### Install
 
 ```sh
-  cd pomodoro-time
+  cd portfolio
   npm install
 ```
 
@@ -102,7 +102,7 @@ In order to run this project you need:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/kennankole/pomodoro-timer/issues/).
+Feel free to check the [issues page](https://github.com/kennankole/portfolio/issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -113,7 +113,14 @@ Feel free to check the [issues page](https://github.com/kennankole/pomodoro-time
 If you like this project kindly give it a ⭐️ 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- ACKNOWLEDGEMENTS -->
 
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to give special thanks to 
+[Pravan](https://www.figma.com/@pavanmg007) for inspiring the UI design. 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
