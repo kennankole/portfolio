@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 
+import Footer from './footer/Footer';
 import About from './about/About';
 import Projects from './projects/Projects';
 import TechStack from './techstacks/TechStack';
@@ -18,6 +19,7 @@ const Menu = () => (
       <Route path="/projects" element={<Projects />} />
       <Route path="/techstack" element={<TechStack />} />
     </Routes>
+    <Footer />
   </>
 );
 export default Menu;

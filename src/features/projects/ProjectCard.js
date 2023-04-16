@@ -14,16 +14,16 @@ import PropTypes from 'prop-types';
 import cardData from '../../app/cardData';
 
 const Cards = ({ data }) => (
-  <Card className="max-w-[24rem] overflow-hidden m-1">
+  <Card className="max-w-[24rem] overflow-hidden m-1 static">
     <CardHeader
-      floated={false}
       shadow={false}
       color="transparent"
-      className="m-0 rounded-none"
+      className="m-0 rounded-none static"
     >
       <img
         src={data.image}
         alt={data.title}
+        className="card-section"
       />
     </CardHeader>
     <br />
@@ -37,7 +37,7 @@ const Cards = ({ data }) => (
               variant="circular"
               alt={stack}
               src={data.language[stack]}
-              className="border-2 border-white hover:z-10"
+              className="border-2 border-white hover:z-10 static"
             />
           </Tooltip>
         </div>
