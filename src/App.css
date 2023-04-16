@@ -59,8 +59,8 @@
   display: flex;
   align-items: center;
   letter-spacing: -1px;
-  color: #42446E;
-  }
+  color: #42446e;
+}
 
 @media only screen and (max-width: 600px) {
   .home-para {
@@ -68,6 +68,7 @@
     line-height: 35px;
   }
 }
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .home-para {
@@ -75,6 +76,7 @@
     line-height: 40px;
   }
 }
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .home-para {
@@ -82,6 +84,7 @@
     line-height: 45px;
   }
 }
+
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .home-para {
@@ -89,6 +92,7 @@
     line-height: 70px;
   }
 }
+
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .home-para {
