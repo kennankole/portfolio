@@ -15,11 +15,11 @@ import './ProjectCard.css';
 import cardData from '../../app/cardData';
 
 const Cards = ({ data }) => (
-  <Card className="max-w-[24rem] overflow-hidden m-1 card-section">
+  <Card className="max-w-[24rem] overflow-hidden m-1 static">
     <CardHeader
       shadow={false}
       color="transparent"
-      className="m-0 rounded-none"
+      className="m-0 rounded-none static"
     >
       <img
         src={data.image}
@@ -38,7 +38,7 @@ const Cards = ({ data }) => (
               variant="circular"
               alt={stack}
               src={data.language[stack]}
-              className="border-2 border-white hover:z-10"
+              className="border-2 border-white hover:z-10 static"
             />
           </Tooltip>
         </div>
