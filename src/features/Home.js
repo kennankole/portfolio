@@ -1,4 +1,5 @@
-import profile from '../images/profile-pic.png';
+// import profile from '../images/profile-pic.png';
+import ContactForm from './contact/ContactForm';
 
 const Home = () => (
   <main className="flex justify-around items-center p-10">
@@ -17,7 +18,7 @@ const Home = () => (
       </p>
     </div>
     <div className="flex items-center p-10 justify-end min-[768px]:max-w-[100%] max-[600px]:max-w-[50%]">
-      <img src={profile} alt="profile-pic" className="max-[600px]:max-w-[70%] min-[600px]:max-w-[100%]" />
+      <ContactForm />
     </div>
   </main>
 );
