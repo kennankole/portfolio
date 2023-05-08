@@ -1,3 +1,4 @@
+import { Tooltip } from '@material-tailwind/react';
 import css from '../../images/css.png';
 import javascript from '../../images/javascript.png';
 import html from '../../images/html.png';
@@ -20,24 +21,58 @@ const TechStack = () => (
   <div className="flex flex-col justify-center p-5 stack-container">
     <h1 className="text-3xl text-center font-bold">My Tech Stack</h1>
     <p className="max-[600px]:text-lg text-xl text-center p-2">Technologies I have been working with recently </p>
-    <div className="flex justify-around items-center flex-wrap p-10 fron-end-stack">
-      <img className="max-[600px]:max-w-[35%] max-w-[9%] m-6" src={html} alt="html" />
-      <img className="max-[600px]:max-w-[26%] max-w-[6.5%] m-6" src={css} alt="react" />
-      <img className="max-[600px]:max-w-[30%] max-w-[7%] m-6" src={javascript} alt="js" />
-      <img className="max-[600px]:max-w-[30%] max-w-[7%] m-6" src={react} alt="html" />
-      <img className="max-[600px]:max-w-[30%] max-w-[7%] m-6" src={redux} alt="html" />
-      <img className="max-[600px]:max-w-[30%] max-w-[7%] m-6" src={bootstrap} alt="html" />
-      <img className="max-[600px]:max-w-[30%] max-w-[7%] m-6" src={tailwind} alt="html" />
-      <img className="max-[600px]:max-w-[30%] max-w-[7%] m-6" src={python} alt="html" />
-      <img className="max-[600px]:max-w-[30%] max-w-[7%] m-6" src={flask} alt="html" />
-      <img className="max-[600px]:max-w-[30%] max-w-[7%] m-6" src={django} alt="html" />
-      <img className="max-[600px]:max-w-[30%] max-w-[7%] m-6" src={Ruby} alt="html" />
-      <img className="max-[600px]:max-w-[30%] max-w-[7%] m-6" src={rails} alt="html" />
-      <img className="max-[600px]:max-w-[30%] max-w-[7%] m-6" src={postgresql} alt="html" />
-      <img className="max-[600px]:max-w-[30%] max-w-[7%] m-6" src={git} alt="html" />
-      <img className="max-[600px]:max-w-[30%] max-w-[7%] m-6" src={gitlab} alt="html" />
-      <img className="max-[600px]:max-w-[30%] max-w-[7%] m-6" src={githublogo} alt="html" />
-      <img className="max-[600px]:max-w-[30%] max-w-[7%] m-6" src={docker} alt="html" />
+    <div className="flex justify-around items-center flex-wrap fron-end-stack">
+      <Tooltip content="HTML">
+        <img className="max-[600px]:max-w-[35%] max-w-[9%] m-6" src={html} alt="html" />
+      </Tooltip>
+      <Tooltip content="CSS">
+        <img className="max-[600px]:max-w-[26%] max-w-[6.5%] m-6" src={css} alt="react" />
+      </Tooltip>
+      <Tooltip content="JavaScript">
+        <img className="max-[600px]:max-w-[30%] max-w-[7%] m-6" src={javascript} alt="js" />
+      </Tooltip>
+      <Tooltip content="React">
+        <img className="max-[600px]:max-w-[30%] max-w-[7%] m-6" src={react} alt="html" />
+      </Tooltip>
+      <Tooltip content="Redux">
+        <img className="max-[600px]:max-w-[30%] max-w-[7%] m-6" src={redux} alt="html" />
+      </Tooltip>
+      <Tooltip content="BootStrap">
+        <img className="max-[600px]:max-w-[30%] max-w-[7%] m-6" src={bootstrap} alt="html" />
+      </Tooltip>
+      <Tooltip content="Tailwind CSS">
+        <img className="max-[600px]:max-w-[30%] max-w-[7%] m-6" src={tailwind} alt="html" />
+      </Tooltip>
+      <Tooltip content="Python">
+        <img className="max-[600px]:max-w-[30%] max-w-[7%] m-6" src={python} alt="html" />
+      </Tooltip>
+      <Tooltip content="Flask">
+        <img className="max-[600px]:max-w-[30%] max-w-[7%] m-6" src={flask} alt="html" />
+      </Tooltip>
+      <Tooltip content="Django">
+        <img className="max-[600px]:max-w-[30%] max-w-[7%] m-6" src={django} alt="html" />
+      </Tooltip>
+      <Tooltip content="Ruby">
+        <img className="max-[600px]:max-w-[30%] max-w-[7%] m-6" src={Ruby} alt="html" />
+      </Tooltip>
+      <Tooltip content="Ruby On Rails">
+        <img className="max-[600px]:max-w-[30%] max-w-[7%] m-6" src={rails} alt="html" />
+      </Tooltip>
+      <Tooltip content="PostgreSQL">
+        <img className="max-[600px]:max-w-[30%] max-w-[7%] m-6" src={postgresql} alt="html" />
+      </Tooltip>
+      <Tooltip content="Git">
+        <img className="max-[600px]:max-w-[30%] max-w-[7%] m-6" src={git} alt="html" />
+      </Tooltip>
+      <Tooltip content="GitLab">
+        <img className="max-[600px]:max-w-[30%] max-w-[7%] m-6" src={gitlab} alt="html" />
+      </Tooltip>
+      <Tooltip content="GitHub">
+        <img className="max-[600px]:max-w-[30%] max-w-[7%] m-6" src={githublogo} alt="html" />
+      </Tooltip>
+      <Tooltip content="Docker">
+        <img className="max-[600px]:max-w-[30%] max-w-[7%] m-6" src={docker} alt="html" />
+      </Tooltip>
     </div>
   </div>
 );
