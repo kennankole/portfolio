@@ -2,7 +2,7 @@
 import ContactForm from './contact/ContactForm';
 
 const Home = () => (
-  <main className="flex justify-around items-center p-10">
+  <main className="flex flex-wrap justify-around items-center">
     <div className="flex w-1/2">
       <p className="home-para">
         Hi 👋,

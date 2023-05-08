@@ -49,8 +49,8 @@ const ContactForm = () => {
 
   return (
     <Card color="transparent" shadow={false}>
-      <Typography variant="h4" color="blue-gray">
-        Contact me
+      <Typography variant="h4" color="blue-gray" className="text-center contact-text">
+        <h4 className="contact-text">Leave a message</h4>
       </Typography>
       <form className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96" onSubmit={handleFormSubmit}>
         <div className="mb-4 flex flex-col gap-6">

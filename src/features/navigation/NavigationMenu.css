@@ -33,6 +33,12 @@ nav ul {
   display: none;
 }
 
+.nav-container.desktop {
+  top: 0;
+  position: sticky;
+  z-index: 1;
+}
+
 @media (max-width: 767px) {
   .nav-container.desktop {
     display: none;
@@ -51,6 +57,9 @@ nav ul {
 
   .mobile-menus {
     display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1;
   }
 
   ul {

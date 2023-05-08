@@ -1,6 +1,7 @@
 import veganMeals from './images/veganMeals.png';
 import spaceX from './images/spaceX.png';
 import royalMeals from './images/royalMeals.png';
+import maths from './images/maths.png';
 import css from '../images/css.png';
 import html from '../images/html.png';
 import react from '../images/react.png';
@@ -52,6 +53,19 @@ const cardData = {
     },
     liveLink: 'https://ridwanullahi-code.github.io/royal-meals-website/',
     github: 'https://github.com/Ridwanullahi-code/royal-meals-website',
+  },
+  card4: {
+    id: 4,
+    image: maths,
+    title: 'Math magician',
+    description: 'Math magician is an online calculator application that allows users to perform basic math operation as well as get inspiring quotes about Mathematics.',
+    language: {
+      HTML: html,
+      React: react,
+      CSS: css,
+    },
+    liveLink: 'https://jovial-kheer-27d9be.netlify.app/',
+    github: 'https://github.com/kennankole/math-magician',
   },
 };
 export default cardData;
