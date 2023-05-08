@@ -59,18 +59,22 @@ const ContactForm = () => {
             label="Name"
             value={name}
             onChange={handleNameInput}
+            required
           />
           <Input
             size="lg"
             label="Email"
             value={email}
             onChange={handleEmailInput}
+            required
+            type="email"
           />
           <Textarea
             size="lg"
             label="Write Message"
             value={message}
             onChange={handleMessageInput}
+            required
           />
         </div>
         <Button
