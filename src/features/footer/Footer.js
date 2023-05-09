@@ -1,7 +1,6 @@
 import { Typography } from '@material-tailwind/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
-// import { Link } from 'react-router-dom';
 
 const Footer = () => (
   <footer className="flex flex-col w-full bg-white p-8 mt-20">
