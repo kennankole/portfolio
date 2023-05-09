@@ -5,7 +5,6 @@ import {
   Card,
   CardHeader,
   CardBody,
-  // CardFooter,
   Typography,
   Avatar,
   Tooltip,
@@ -91,97 +90,7 @@ const ProjectCard = () => (
     {Object.values(cardData).map((data) => (
       <Cards key={data.id} data={data} />
     ))}
-    {/* <section className="flex justify-center flex-wrap m-5">
-      {Object.values(cardData).map((card) => (
-        <Card className="max-w-[24rem] overflow-hidden" key={card.id}>
-          <CardHeader
-            floated={false}
-            shadow={false}
-            color="transparent"
-            className="m-0 rounded-none"
-          >
-            <img
-              src={card.image}
-              alt="img-blur-shadow"
-              className="w-full h-full"
-            />
-          </CardHeader>
-          <CardBody>
-            <Typography variant="h4" color="blue-gray">
-              {card.title}
-            </Typography>
-            <div className="flex items-center justify-between py-3">
-              <Tooltip content="Github">
-                <NavLink
-                  to={card.github}
-                  target="_blank"
-                  rel="noopener norferrer"
-                >
-                  <BsGithub />
-                </NavLink>
-              </Tooltip>
-              <Typography variant="small">
-                <Tooltip content="Live Preview">
-                  <NavLink
-                    to={card.liveLink}
-                    target="_blank"
-                    rel="noopener norferrer"
-                  >
-                    <FaLink />
-                  </NavLink>
-                </Tooltip>
-              </Typography>
-            </div>
-            <div className="flex justify-between items-center py-3">
-              <Typography className="font-normal">TechStack</Typography>
-              <div className="flex items-center -space-x-3">
-                {card.language.map(img) => (
-                   <Tooltip content="HTML">
-                   <Avatar
-                     size="sm"
-                     variant="circular"
-                     alt="html"
-                     src={html}
-                     className="border-2 border-white hover:z-10"
-                   />
-                 </Tooltip>
-                )}
-                <Tooltip content="HTML">
-                  <Avatar
-                    size="sm"
-                    variant="circular"
-                    alt="html"
-                    src={html}
-                    className="border-2 border-white hover:z-10"
-                  />
-                </Tooltip>
-                <Tooltip content="CSS">
-                  <Avatar
-                    size="sm"
-                    variant="circular"
-                    alt="css"
-                    src={css}
-                    className="border-2 border-white hover:z-10"
-                  />
-                </Tooltip>
-                <Tooltip content="React">
-                  <Avatar
-                    size="sm"
-                    variant="circular"
-                    alt="react"
-                    src={react}
-                    className="border-2 border-white hover:z-10"
-                  />
-                </Tooltip>
-              </div>
-            </div>
-            <Typography variant="lead" color="gray" className="mt-3 font-normal">
-              {card.description}
-            </Typography>
-          </CardBody>
-        </Card>
-      ))} */}
-    {/* </section> */}
+
   </div>
 );
 
