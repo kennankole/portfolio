@@ -1,11 +1,12 @@
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
-// eslint-disable-next-line import/no-extraneous-dependencies
+import DarkModeToggle from '../darkMode/darkMode';
 
 const NavLinks = () => (
   <div>
     <div>
+      <DarkModeToggle className="link-item" />
       <NavLink
         to="/"
         exact

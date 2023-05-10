@@ -1,4 +1,3 @@
-// import profile from '../images/profile-pic.png';
 import ContactForm from './contact/ContactForm';
 
 const Home = () => (

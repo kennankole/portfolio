@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import { CgMenu, CgClose } from 'react-icons/cg';
 import { useState } from 'react';
 import MobileNavLinks from './MobileNavLinks';

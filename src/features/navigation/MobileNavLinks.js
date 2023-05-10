@@ -1,11 +1,12 @@
 import { NavLink, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import PropTypes from 'prop-types';
+import DarkModeToggle from '../darkMode/darkMode';
 
 const MobileNavLinks = ({ props }) => (
   <>
+    <DarkModeToggle />
     <NavLink
       to="/"
       exact
