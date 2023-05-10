@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.6e8257b0.css",
-    "main.js": "/static/js/main.77c8d24a.js",
-    "static/media/royalMeals.png": "/static/media/royalMeals.9024299bc585a7277f52.png",
-    "static/media/veganMeals.png": "/static/media/veganMeals.d424897d6eb7bd338ada.png",
-    "static/media/spaceX.png": "/static/media/spaceX.af7db73543ac19b90ef3.png",
-    "static/media/gitlab.png": "/static/media/gitlab.6681f43b8874f56fe9ff.png",
-    "static/media/postgresql.png": "/static/media/postgresql.e2cefe4b387a97f81812.png",
-    "static/media/maths.png": "/static/media/maths.e2d48e43b96eec703109.png",
-    "static/media/docker.png": "/static/media/docker.bed81648dc8a1cc8944c.png",
-    "index.html": "/index.html",
-    "main.6e8257b0.css.map": "/static/css/main.6e8257b0.css.map",
-    "main.77c8d24a.js.map": "/static/js/main.77c8d24a.js.map"
+    "main.css": "/portfolio/static/css/main.0c72b069.css",
+    "main.js": "/portfolio/static/js/main.be19cc3e.js",
+    "static/media/royalMeals.png": "/portfolio/static/media/royalMeals.9024299bc585a7277f52.png",
+    "static/media/veganMeals.png": "/portfolio/static/media/veganMeals.d424897d6eb7bd338ada.png",
+    "static/media/spaceX.png": "/portfolio/static/media/spaceX.af7db73543ac19b90ef3.png",
+    "static/media/gitlab.png": "/portfolio/static/media/gitlab.6681f43b8874f56fe9ff.png",
+    "static/media/postgresql.png": "/portfolio/static/media/postgresql.e2cefe4b387a97f81812.png",
+    "static/media/maths.png": "/portfolio/static/media/maths.e2d48e43b96eec703109.png",
+    "static/media/docker.png": "/portfolio/static/media/docker.bed81648dc8a1cc8944c.png",
+    "index.html": "/portfolio/index.html",
+    "main.0c72b069.css.map": "/portfolio/static/css/main.0c72b069.css.map",
+    "main.be19cc3e.js.map": "/portfolio/static/js/main.be19cc3e.js.map"
   },
   "entrypoints": [
-    "static/css/main.6e8257b0.css",
-    "static/js/main.77c8d24a.js"
+    "static/css/main.0c72b069.css",
+    "static/js/main.be19cc3e.js"
   ]
 }
