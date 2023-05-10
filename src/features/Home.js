@@ -13,7 +13,7 @@ const Home = () => (
         Obwombe Kennedy
         {' '}
         <br />
-        I build things for web
+        I build things for web.
       </p>
     </div>
     <div className="flex items-center p-10 justify-end min-[768px]:max-w-[100%] max-[600px]:max-w-[50%]">
