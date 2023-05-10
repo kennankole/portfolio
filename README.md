@@ -96,6 +96,11 @@ In order to run this project you need:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🚀 Live Demo 
+
+[See live](http://kennankole.me/portfolio/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
