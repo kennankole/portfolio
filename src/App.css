@@ -104,3 +104,13 @@
     line-height: 70px;
   }
 }
+
+.night {
+  background-color: #333;
+  color: #fff;
+}
+
+.day {
+  background-color: #fff;
+  color: #333;
+}

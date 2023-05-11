@@ -3,13 +3,25 @@ import {
   Navbar,
   MobileNav,
   Typography,
-  // Button,
+  Switch,
   IconButton,
   // Card,
 } from '@material-tailwind/react';
 
 const DesktopNavigation = () => {
   const [openNav, setOpenNav] = React.useState(false);
+  const [theme, setTheme] = React.useState('day');
+  const toggleTheme = () => {
+    if (theme === 'day') {
+      setTheme('night');
+    } else {
+      setTheme('day');
+    }
+  };
+
+  React.useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
 
   React.useEffect(() => {
     window.addEventListener(
@@ -71,7 +83,7 @@ const DesktopNavigation = () => {
             href="#"
             className="mr-4 cursor-pointer py-1.5 font-medium"
           >
-            Material Tailwind
+            <Switch onClick={toggleTheme} label={theme} />
           </Typography>
           <div className="flex items-center gap-4">
             <div className="mr-4 hidden lg:block">{NavLinks}</div>
