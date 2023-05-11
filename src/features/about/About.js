@@ -3,7 +3,7 @@ import { FaSchool } from 'react-icons/fa';
 import './About.css';
 
 const About = () => (
-  <section className="flex justify-around min-[600px]:p-10 m-10 w-5/6 about-me-section ">
+  <section className="flex justify-around min-[600px]:p-10 m-10 w-5/6 about-me-section" id="About">
     <div className="min-[600px]:w-4/5 about-container">
       <div className=" flex flex-col about-me-text">
         <h1 className="font-bold py-5 title">About Me</h1>
@@ -49,7 +49,7 @@ const About = () => (
             </div>
             <div className="date">
               <div className="flex flex justify-end">
-                <span className="font-semibold w-1/2 flex justify-center py-1">Full Time</span>
+                <span className="font-semibold w-1/2 flex justify-center py-1 span">Full Time</span>
               </div>
               <p className="flex items-center justify-around font-semibold max-[375px]:text-sm">
                 <CgCalendarDates />
@@ -74,7 +74,7 @@ const About = () => (
           </div>
           <div className="date">
             <div className="flex flex justify-end">
-              <span className="font-semibold w-1/2 flex justify-center py-1">Full Time</span>
+              <span className="font-semibold w-1/2 flex justify-center py-1 span">Full Time</span>
             </div>
             <p className="flex items-center justify-around font-semibold max-[375px]:w-36 min-[375px]:w-40">
               <CgCalendarDates />
@@ -89,7 +89,7 @@ const About = () => (
           </div>
           <div className="date">
             <div className="flex flex justify-end">
-              <span className="font-semibold w-1/2 flex justify-center py-1">Full Time</span>
+              <span className="font-semibold w-1/2 flex justify-center py-1 span">Full Time</span>
             </div>
             <p className="flex items-center justify-around font-semibold min-[375px]:text-sm">
               <CgCalendarDates />

@@ -1,12 +1,15 @@
 import { Typography } from '@material-tailwind/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import {
+  faTwitter, faGithub, faLinkedin, faMedium,
+  faAngellist,
+} from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => (
-  <footer className="flex flex-col w-full bg-white p-8 mt-20">
+  <footer className="flex flex-col w-full p-8 mt-20">
     <div className="flex flex-wrap justify-between upper-footer">
       <div className="items-center flex flex-wrap items-center gap-y-2 gap-x-8">
-        <Typography color="blue-gray" className="text-center font-normal">
+        <Typography className="text-center font-normal">
           &copy; 2023 Kennankole
         </Typography>
       </div>
@@ -15,7 +18,6 @@ const Footer = () => (
           <Typography
             as="a"
             href="/"
-            color="blue-gray"
             className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
           >
             +254716244165
@@ -23,7 +25,6 @@ const Footer = () => (
           <Typography
             as="a"
             href="/"
-            color="blue-gray"
             className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
           >
             kennankole@gmail.com
@@ -32,27 +33,42 @@ const Footer = () => (
         <div className="flex flex-wrap items-center gap-y-2 gap-x-8">
           <Typography
             as="a"
-            href="/"
-            color="blue-gray"
+            href="https://twitter.com/KennedyObwombe"
+            target="_blank"
             className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
           >
-            <FontAwesomeIcon icon={faGithub} />
+            <FontAwesomeIcon icon={faTwitter} />
           </Typography>
           <Typography
             as="a"
-            href="/"
-            color="blue-gray"
+            href="https://www.linkedin.com/in/kennedyomondi"
+            target="_blank"
             className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
           >
             <FontAwesomeIcon icon={faLinkedin} />
           </Typography>
           <Typography
             as="a"
-            href="/"
-            color="blue-gray"
+            href="https://github.com/kennankole"
+            target="_blank"
             className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
           >
-            <FontAwesomeIcon icon={faTwitter} />
+            <FontAwesomeIcon icon={faGithub} />
+          </Typography>
+          <Typography
+            as="a"
+            href="https://medium.com/@kennankole"
+            target="_blank"
+            className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
+          >
+            <FontAwesomeIcon icon={faMedium} />
+          </Typography>
+          <Typography
+            as="a"
+            href="/"
+            className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
+          >
+            <FontAwesomeIcon icon={faAngellist} />
           </Typography>
         </div>
       </div>
@@ -62,8 +78,8 @@ const Footer = () => (
       <div className="flex flex-wrap items-center gap-y-2 gap-x-8 w-1/2 footer-ul">
         <Typography
           as="a"
-          href="/"
-          color="blue-gray"
+          href="https://wellfound.com/u/omndi-kennedy"
+          target="_blank"
           className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
         >
           Home
@@ -71,7 +87,6 @@ const Footer = () => (
         <Typography
           as="a"
           href="about"
-          color="blue-gray"
           className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
         >
           About
@@ -79,7 +94,6 @@ const Footer = () => (
         <Typography
           as="a"
           href="projects"
-          color="blue-gray"
           className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
         >
           Projects
@@ -87,7 +101,6 @@ const Footer = () => (
         <Typography
           as="a"
           href="techstack"
-          color="blue-gray"
           className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
         >
           TechStack
@@ -98,7 +111,6 @@ const Footer = () => (
         <Typography
           as="a"
           href="https://www.figma.com/@pavanmg007"
-          color="blue-gray"
           className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
         >
           Pravan
@@ -107,7 +119,6 @@ const Footer = () => (
         <Typography
           as="a"
           href="https://github.com/kennankole"
-          color="blue-gray"
           className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
         >
           kennankole
