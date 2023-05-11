@@ -48,45 +48,47 @@ const ContactForm = () => {
   };
 
   return (
-    <Card color="transparent" shadow={false}>
-      <Typography variant="h4" color="blue-gray" className="text-center contact-text">
-        <h4 className="contact-text">Leave a message</h4>
-      </Typography>
-      <form className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96" onSubmit={handleFormSubmit}>
-        <div className="mb-4 flex flex-col gap-6">
-          <Input
-            size="lg"
-            label="Name"
-            value={name}
-            onChange={handleNameInput}
-            required
-          />
-          <Input
-            size="lg"
-            label="Email"
-            value={email}
-            onChange={handleEmailInput}
-            required
-            type="email"
-          />
-          <Textarea
-            size="lg"
-            label="Write Message"
-            value={message}
-            onChange={handleMessageInput}
-            required
-          />
-        </div>
-        <Button
-          className="mt-6"
-          fullWidth
-          type="submit"
-        >
-          Send
-        </Button>
-      </form>
-      <p>{formState}</p>
-    </Card>
+    <div id="Contact">
+      <Card color="transparent" shadow={false}>
+        <Typography variant="h4" color="blue-gray" className="text-center contact-text">
+          <h4 className="contact-text">Leave a message</h4>
+        </Typography>
+        <form className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96" onSubmit={handleFormSubmit}>
+          <div className="mb-4 flex flex-col gap-6">
+            <Input
+              size="lg"
+              label="Name"
+              value={name}
+              onChange={handleNameInput}
+              required
+            />
+            <Input
+              size="lg"
+              label="Email"
+              value={email}
+              onChange={handleEmailInput}
+              required
+              type="email"
+            />
+            <Textarea
+              size="lg"
+              label="Write Message"
+              value={message}
+              onChange={handleMessageInput}
+              required
+            />
+          </div>
+          <Button
+            className="mt-6"
+            fullWidth
+            type="submit"
+          >
+            Send
+          </Button>
+        </form>
+        <p>{formState}</p>
+      </Card>
+    </div>
   );
 };
 

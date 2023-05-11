@@ -1,12 +1,18 @@
 import DesktopNavigation from './navigation/Navigation';
-// import About from './about/About';
-// import TechStack from './techstacks/TechStack';
+import TechStack from './techstacks/TechStack';
+import Projects from './projects/Projects';
+import About from './about/About';
+import ContactForm from './contact/ContactForm';
+import Example from './Menu';
 
 const Home = () => (
   <main>
     <DesktopNavigation />
-    {/* <About />
-    <TechStack /> */}
+    <Example />
+    <About />
+    <Projects />
+    <TechStack />
+    <ContactForm />
   </main>
 );
 

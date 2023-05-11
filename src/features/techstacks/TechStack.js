@@ -18,7 +18,7 @@ import gitlab from '../../images/gitlab.png';
 import postgresql from '../../images/postgresql.png';
 
 const TechStack = () => (
-  <div className="flex flex-col justify-center p-5 stack-container">
+  <div className="flex flex-col justify-center p-5 stack-container" id="Technologies">
     <h1 className="text-3xl text-center font-bold">My Tech Stack</h1>
     <p className="max-[600px]:text-lg text-xl text-center p-2">Technologies I have been working with recently </p>
     <div className="flex justify-around items-center flex-wrap fron-end-stack">
