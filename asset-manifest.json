@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.198acfe3.css",
+    "main.css": "/portfolio/static/css/main.87637f1f.css",
     "main.js": "/portfolio/static/js/main.fbc5b5b5.js",
     "static/media/royalMeals.png": "/portfolio/static/media/royalMeals.9024299bc585a7277f52.png",
     "static/media/veganMeals.png": "/portfolio/static/media/veganMeals.d424897d6eb7bd338ada.png",
@@ -10,11 +10,11 @@
     "static/media/maths.png": "/portfolio/static/media/maths.e2d48e43b96eec703109.png",
     "static/media/docker.png": "/portfolio/static/media/docker.bed81648dc8a1cc8944c.png",
     "index.html": "/portfolio/index.html",
-    "main.198acfe3.css.map": "/portfolio/static/css/main.198acfe3.css.map",
+    "main.87637f1f.css.map": "/portfolio/static/css/main.87637f1f.css.map",
     "main.fbc5b5b5.js.map": "/portfolio/static/js/main.fbc5b5b5.js.map"
   },
   "entrypoints": [
-    "static/css/main.198acfe3.css",
+    "static/css/main.87637f1f.css",
     "static/js/main.fbc5b5b5.js"
   ]
 }
