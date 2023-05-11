@@ -1,8 +1,8 @@
-import { NavLink } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { BsGithub } from 'react-icons/bs';
 import { FaLink } from 'react-icons/fa';
 import {
-  Card,
+  // Card,
   CardHeader,
   CardBody,
   Typography,
@@ -13,7 +13,7 @@ import PropTypes from 'prop-types';
 import cardData from '../../app/cardData';
 
 const Cards = ({ data }) => (
-  <Card className="max-w-[24rem] overflow-hidden m-1 static">
+  <div className="max-w-[24rem] overflow-hidden m-1 static project-card">
     <CardHeader
       shadow={false}
       color="transparent"
@@ -44,33 +44,25 @@ const Cards = ({ data }) => (
     </div>
     <div className="flex flex-wrap items-center gap-3 justify-between m-5">
       <Tooltip content="Project repo">
-        <NavLink
-          to={data.github}
-          target="_blank"
-          rel="noopener norferrer"
-        >
+        <a href={data.github} className="flex items-center" target="_blank" rel="noopener norferrer noreferrer">
           <BsGithub className="w-5 h-5" />
-        </NavLink>
+        </a>
       </Tooltip>
       <Tooltip content="Live Preview">
-        <NavLink
-          to={data.liveLink}
-          target="_blank"
-          rel="noopener norferrer"
-        >
+        <a href={data.liveLink} className="flex items-center" target="_blank" rel="noopener norferrer noreferrer">
           <FaLink className="w-5 h-5" />
-        </NavLink>
+        </a>
       </Tooltip>
     </div>
     <CardBody>
-      <Typography variant="h4" color="blue-gray">
+      <Typography variant="h4">
         {data.title}
       </Typography>
       <Typography variant="lead" color="gray" className="mt-3 font-normal">
         {data.description}
       </Typography>
     </CardBody>
-  </Card>
+  </div>
 );
 
 Cards.propTypes = {
