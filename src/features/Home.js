@@ -4,6 +4,7 @@ import Projects from './projects/Projects';
 import About from './about/About';
 import ContactForm from './contact/ContactForm';
 import Example from './Menu';
+import Footer from './footer/Footer';
 
 const Home = () => (
   <main>
@@ -13,6 +14,7 @@ const Home = () => (
     <Projects />
     <TechStack />
     <ContactForm />
+    <Footer />
   </main>
 );
 
