@@ -116,7 +116,7 @@
 }
 
 .home-section {
-  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0 25px 20px -20px;
 }
 
 .connect {
@@ -129,6 +129,6 @@
 
 .project-card {
   box-shadow:
-   rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-   rgba(25, 16, 16, 0.3) 0px 30px 60px -30px;
+    rgba(50, 50, 93, 0.25) 0 50px 100px -20px,
+    rgba(25, 16, 16, 0.3) 0 30px 60px -30px;
 }
