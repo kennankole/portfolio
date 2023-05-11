@@ -1,19 +1,29 @@
-import DesktopNavigation from './navigation/Navigation';
+import NavigationMenu from './navigation/Navigation';
 import TechStack from './techstacks/TechStack';
 import Projects from './projects/Projects';
 import About from './about/About';
 import ContactForm from './contact/ContactForm';
-import Example from './Menu';
+import HomePage from './HomePage';
 import Footer from './footer/Footer';
 
 const Home = () => (
   <main>
-    <DesktopNavigation />
-    <Example />
+    <NavigationMenu />
+    <br />
+    <HomePage />
+    <br />
     <About />
+    <br />
+    <br />
+    <br />
     <Projects />
+    <br />
+    <br />
     <TechStack />
+    <br />
+    <br />
     <ContactForm />
+    <br />
     <Footer />
   </main>
 );

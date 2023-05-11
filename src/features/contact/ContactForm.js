@@ -48,7 +48,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div id="Contact">
+    <div id="Contact" className="flex justify-center mb-5">
       <Card color="transparent" shadow={false}>
         <Typography variant="h4" color="blue-gray" className="text-center contact-text">
           <h4 className="contact-text">Leave a message</h4>

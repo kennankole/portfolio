@@ -123,7 +123,12 @@
   width: 50%;
 }
 
-
 .scroll {
   cursor: pointer;
+}
+
+.project-card {
+  box-shadow:
+   rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+   rgba(25, 16, 16, 0.3) 0px 30px 60px -30px;
 }

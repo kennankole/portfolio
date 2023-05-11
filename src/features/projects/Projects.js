@@ -1,7 +1,7 @@
 import ProjectCard from './ProjectCard';
 
 const Projects = () => (
-  <div className="" id="Projects">
+  <div id="Projects">
     <div className="flex justify-center">
       <div className="flex flex-col">
         <h2 className="flex justify-center text-3xl">Projects</h2>

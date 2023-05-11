@@ -8,7 +8,7 @@ import {
 } from '@material-tailwind/react';
 import { Link } from 'react-scroll';
 
-const DesktopNavigation = () => {
+const NavigationMenu = () => {
   const [openNav, setOpenNav] = React.useState(false);
   const [theme, setTheme] = React.useState('day');
   const toggleTheme = () => {
@@ -38,9 +38,15 @@ const DesktopNavigation = () => {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#Home" className="flex items-center">
+        <Link
+          to="Home"
+          spy
+          smooth
+          offset={-100}
+          className="flex items-center scroll"
+        >
           Home
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -166,4 +172,4 @@ const DesktopNavigation = () => {
   );
 };
 
-export default DesktopNavigation;
+export default NavigationMenu;

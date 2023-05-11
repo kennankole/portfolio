@@ -2,7 +2,7 @@
 import './App.css';
 import './features/navigation/NavigationMenu.css';
 // import Menu from './features/Menu';
-import Home from './features/Home';
+import Home from './features/Main';
 
 const App = () => (
   <main>

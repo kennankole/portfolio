@@ -13,7 +13,7 @@ import PropTypes from 'prop-types';
 import cardData from '../../app/cardData';
 
 const Cards = ({ data }) => (
-  <div className="max-w-[24rem] overflow-hidden m-1 static">
+  <div className="max-w-[24rem] overflow-hidden m-1 static project-card">
     <CardHeader
       shadow={false}
       color="transparent"
@@ -55,7 +55,7 @@ const Cards = ({ data }) => (
       </Tooltip>
     </div>
     <CardBody>
-      <Typography variant="h4" color="blue-gray">
+      <Typography variant="h4">
         {data.title}
       </Typography>
       <Typography variant="lead" color="gray" className="mt-3 font-normal">
