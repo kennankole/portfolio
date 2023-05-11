@@ -6,6 +6,7 @@ import {
   Switch,
   IconButton,
 } from '@material-tailwind/react';
+import { Link } from 'react-scroll';
 
 const DesktopNavigation = () => {
   const [openNav, setOpenNav] = React.useState(false);
@@ -47,9 +48,15 @@ const DesktopNavigation = () => {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#About" className="flex items-center">
+        <Link
+          to="About"
+          className="flex items-center scroll"
+          spy
+          smooth
+          offset={-100}
+        >
           About
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -57,9 +64,15 @@ const DesktopNavigation = () => {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#Projects" className="flex items-center">
+        <Link
+          to="Projects"
+          spy
+          smooth
+          offset={-100}
+          className="flex items-center scroll"
+        >
           Projects
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -67,9 +80,15 @@ const DesktopNavigation = () => {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#Technologies" className="flex items-center">
+        <Link
+          to="Technologies"
+          spy
+          smooth
+          offset={-100}
+          className="flex items-center scroll"
+        >
           Technologies
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -77,9 +96,15 @@ const DesktopNavigation = () => {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#Contact" className="flex items-center">
+        <Link
+          to="Contact"
+          spy
+          smooth
+          offset={-100}
+          className="flex items-center scroll"
+        >
           Contact
-        </a>
+        </Link>
       </Typography>
     </ul>
   );

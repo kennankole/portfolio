@@ -11,7 +11,7 @@ import {
 
 export default function Example() {
   return (
-    <div className="flex flex-wrap justify-between p-10">
+    <div className="flex flex-wrap justify-between p-10" id="Home">
       <div className="home-section mb-5">
         <CardBody className="flex">
           <Typography variant="h5" color="blue-gray" className="mb-2">

@@ -123,6 +123,7 @@
   width: 50%;
 }
 
-.navigation {
-  position: sticky;
+
+.scroll {
+  cursor: pointer;
 }
