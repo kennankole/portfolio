@@ -132,3 +132,11 @@
     rgba(50, 50, 93, 0.25) 0 50px 100px -20px,
     rgba(25, 16, 16, 0.3) 0 30px 60px -30px;
 }
+
+.card-section {
+  transition: transform 0.5s;
+}
+
+.card-section:hover {
+  transform: scale(1.5);
+}
