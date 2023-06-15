@@ -7,6 +7,7 @@ import html from '../images/html.png';
 import react from '../images/react.png';
 import redux from '../images/redux.png';
 import javascript from '../images/javascript.png';
+import timetable from '../images/timetable.png';
 // import postgresql from '../images/postgresql.png';
 // import ruby from '../images/Ruby.png';
 // import rails from '../images/rails.png';
@@ -66,6 +67,19 @@ const cardData = {
     },
     liveLink: 'https://jovial-kheer-27d9be.netlify.app/',
     github: 'https://github.com/kennankole/math-magician',
+  },
+  card5: {
+    id: 5,
+    image: timetable,
+    title: 'Timetable',
+    description: 'This is an online timetable app that helps you plan your week by putting a system in place to help you achieve your goals.',
+    language: {
+      HTML: html,
+      CSS: css,
+      JavaScript: javascript,
+    },
+    liveLink: 'https://kennankole.me/timetable/',
+    github: 'https://github.com/kennankole/timetable',
   },
 };
 export default cardData;
